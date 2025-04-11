@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Development Plan - Dr. Sulaiman Al Habib Medical Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0b58a5;
+            --secondary-color: #00a1df;
+            --accent-color: #4caf50;
+            --text-color: #333333;
+            --light-bg: #f8f9fa;
+            --dark-bg: #1a2a3a;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .page {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            position: relative;
+        }
+        
+        .cover-page {
+            min-height: 1000px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover-page::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://cdn.jsdelivr.net/gh/yuanchuan/gradient-background@0.4.0/dist/assets/svg/gradient-1.svg');
+            background-size: cover;
+            opacity: 0.1;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .cover-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section-header {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .chart-container {
+            margin: 30px 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .citation {
+            font-size: 0.8rem;
+            color: #555;
+            font-style: italic;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        
+        .reference-item {
+            margin-bottom: 15px;
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 15px;
+        }
+        
+        .strategy-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .strategy-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .strategy-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            font-weight: 600;
+        }
+        
+        .strategy-body {
+            padding: 20px;
+        }
+        
+        .key-point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .key-point i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+        
+        .roadmap-item {
+            display: flex;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .roadmap-timeline {
+            position: relative;
+            min-width: 100px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        
+        .roadmap-timeline::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .roadmap-content {
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .roadmap-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            z-index: 1;
+        }
+        
+        .competitor-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .competitor-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 15px;
+            font-weight: 600;
+        }
+        
+        .competitor-body {
+            padding: 15px;
+        }
+        
+        .swot-box {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .swot-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .swot-strengths { border-left: 4px solid #4caf50; }
+        .swot-weaknesses { border-left: 4px solid #f44336; }
+        .swot-opportunities { border-left: 4px solid #2196f3; }
+        .swot-threats { border-left: 4px solid #ff9800; }
+        
+        .table-of-contents {
+            margin: 30px 0;
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .toc-item {
+            margin-bottom: 10px;
+        }
+        
+        .toc-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .toc-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .toc-level-2 {
+            margin-left: 20px;
+        }
+        
+        .pillar-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+        
+        .chart-responsive {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+        }
+        
+        .prepared-by {
+            position: absolute;
+            bottom: 100px;
+            text-align: center;
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="page cover-page">
+        <div class="cover-content">
+            <h1 class="text-5xl mb-5 font-bold">Business Development Plan</h1>
+            <h2 class="text-4xl mb-10">Dr. Sulaiman Al Habib Medical Group</h2>
+            <div class="flex justify-center mb-8">
+                <div class="w-24 h-1 bg-white rounded"></div>
+            </div>
+            <h3 class="text-3xl mb-3">Expanding Horizons</h3>
+            <h4 class="text-xl mb-10">2025-2030</h4>
+            
+            <div class="grid grid-cols-2 gap-8 mt-16 text-center">
+                <div>
+                    <i class="fas fa-laptop-medical text-5xl mb-4"></i>
+                    <p class="text-lg">Digital Transformation</p>
+                </div>
+                <div>
+                    <i class="fas fa-brain text-5xl mb-4"></i>
+                    <p class="text-lg">AI in Healthcare</p>
+                </div>
+                <div>
+                    <i class="fas fa-plane-departure text-5xl mb-4"></i>
+                    <p class="text-lg">Medical Tourism</p>
+                </div>
+                <div>
+                    <i class="fas fa-heartbeat text-5xl mb-4"></i>
+                    <p class="text-lg">Wellness & Prevention</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="prepared-by">
+            <p>Prepared By</p>
+            <p>Dr. Saad Naiem Ali</p>
+        </div>
+    </div>
+    
+    <!-- Table of Contents -->
+    <div class="page">
+        <h1 class="text-3xl mb-6 text-center">Table of Contents</h1>
+        
+        <div class="table-of-contents">
+            <div class="toc-item"><a href="#executive-summary">1. Executive Summary</a></div>
+            <div class="toc-item"><a href="#introduction">2. Introduction</a></div>
+            <div class="toc-item toc-level-2"><a href="#company-overview">2.1 Company Overview</a></div>
+            <div class="toc-item toc-level-2"><a href="#vision-mission">2.2 Vision and Mission</a></div>
+            <div class="toc-item toc-level-2"><a href="#current-position">2.3 Current Market Position</a></div>
+            
+            <div class="toc-item"><a href="#market-analysis">3. Market Analysis</a></div>
+            <div class="toc-item toc-level-2"><a href="#global-trends">3.1 Global Healthcare Trends</a></div>
+            <div class="toc-item toc-level-2"><a href="#regional-landscape">3.2 Regional Healthcare Landscape</a></div>
+            <div class="toc-item toc-level-2"><a href="#saudi-market">3.3 Saudi Arabian Healthcare Market</a></div>
+            <div class="toc-item toc-level-2"><a href="#vision-2030">3.4 Vision 2030: Healthcare Transformation</a></div>
+            
+            <div class="toc-item"><a href="#competition-analysis">4. Competition Analysis</a></div>
+            <div class="toc-item toc-level-2"><a href="#key-competitors">4.1 Key Competitors</a></div>
+            <div class="toc-item toc-level-2"><a href="#competitive-position">4.2 HMG's Competitive Position</a></div>
+            <div class="toc-item toc-level-2"><a href="#swot-analysis">4.3 SWOT Analysis</a></div>
+            
+            <div class="toc-item"><a href="#strategic-pillars">5. Strategic Pillars</a></div>
+            <div class="toc-item toc-level-2"><a href="#digital-transformation">5.1 Digital Transformation Strategy</a></div>
+            <div class="toc-item toc-level-2"><a href="#ai-healthcare">5.2 AI in Healthcare</a></div>
+            <div class="toc-item toc-level-2"><a href="#medical-tourism">5.3 Medical Tourism Program</a></div>
+            <div class="toc-item toc-level-2"><a href="#wellness-prevention">5.4 Wellness and Preventive Care Programs</a></div>
+            
+            <div class="toc-item"><a href="#implementation">6. Implementation Roadmap</a></div>
+            <div class="toc-item toc-level-2"><a href="#phase-one">6.1 Phase One: Foundation (2025-2026)</a></div>
+            
+        </div>
+        
+        <div class="page-number">Page 1</div>
+    </div>
+    
+    <!-- Executive Summary -->
+    <div class="page" id="executive-summary">
+        <div class="section">
+            <h1 class="text-3xl mb-6 section-header">1. Executive Summary</h1>
+            
+            <p class="mb-4">
+                Dr. Sulaiman Al Habib Medical Group (HMG) has established itself as a leading healthcare provider in Saudi Arabia, with a strong presence across the region. As the Kingdom moves forward with its ambitious Vision 2030 plan, significant opportunities exist for HMG to expand its market position and contribute to transforming the national healthcare landscape.
+            </p>
+            
+            <p class="mb-4">
+                This Business Development Plan outlines a comprehensive strategy for HMG's growth from 2025 to 2030, focusing on four strategic pillars that align with both market demands and the national vision:
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                <div class="strategy-card">
+                    <div class="strategy-header">
+                        <i class="fas fa-laptop-medical mr-2"></i> Digital Transformation Strategy
+                    </div>
+                    <div class="strategy-body">
+                        Leveraging advanced digital technologies to enhance patient experience, streamline operations, and extend HMG's reach beyond physical facilities through telemedicine, digital health platforms, and integrated healthcare ecosystems.
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-header">
+                        <i class="fas fa-brain mr-2"></i> AI in Healthcare
+                    </div>
+                    <div class="strategy-body">
+                        Implementing cutting-edge AI solutions for diagnostic support, personalized treatment planning, operational efficiency, and predictive analytics to improve patient outcomes and optimize resource utilization.
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-header">
+                        <i class="fas fa-plane-departure mr-2"></i> Medical Tourism Program
+                    </div>
+                    <div class="strategy-body">
+                        Developing comprehensive medical tourism offerings that capitalize on HMG's clinical excellence and Saudi Arabia's strategic location to attract international patients, particularly from the GCC, broader Middle East, and Africa.
+                    </div>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-header">
+                        <i class="fas fa-heartbeat mr-2"></i> Wellness and Preventive Care Programs
+                    </div>
+                    <div class="strategy-body">
+                        Expanding beyond traditional curative care to comprehensive wellness and preventive services, addressing the Kingdom's rising non-communicable disease burden while creating new revenue streams.
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mb-4">
+                Market analysis indicates significant growth potential in Saudi Arabia's healthcare sector, with the market expected to reach SAR 120 billion by 2030, driven by population growth, increased insurance coverage, and government investments in healthcare infrastructure. HMG is well-positioned to capitalize on these trends, given its strong brand reputation, clinical excellence, and technological capabilities.
+            </p>
+            
+            <p class="mb-4">
+                The competitive landscape includes both established players like Saudi German Health, Mouwasat Medical Services, and emerging digital health startups. HMG's competitive advantage lies in its integrated care model, technological infrastructure, and established relationships with major insurers and corporate clients.
+            </p>
+            
+            <p class="mb-4">
+                Financial projections indicate that successful implementation of this plan could lead to a compound annual growth rate (CAGR) of 15-18% over the five-year period, with particularly strong growth in digital health services, medical tourism, and preventive care programs. The total required investment is estimated at SAR 2.3 billion, with an expected return on investment of 22% over the full implementation period.
+            </p>
+            
+            <p class="mb-4">
+                This Business Development Plan positions HMG to not only expand its market leadership but also play a pivotal role in transforming healthcare delivery in Saudi Arabia, in alignment with the national vision for a world-class, patient-centered healthcare system.
+            </p>
+        </div>
+        
+        <div class="page-number">Page 2</div>
+    </div>
+    
+    <!-- Introduction -->
+    <div class="page" id="introduction">
+        <div class="section">
+            <h1 class="text-3xl mb-6 section-header">2. Introduction</h1>
+            
+            <div id="company-overview">
+                <h2 class="text-2xl mb-4">2.1 Company Overview</h2>
+                
+                <p class="mb-4">
+                    Dr. Sulaiman Al Habib Medical Group (HMG) was established in 1995 and has grown to become one of the largest private healthcare providers in Saudi Arabia and the broader GCC region. The group operates an extensive network of hospitals, outpatient clinics, pharmacies, and medical laboratories, serving millions of patients annually.
+                </p>
+                
+                <p class="mb-4">
+                    As of 2025, HMG operates 20 medical facilities across Saudi Arabia, UAE, and Bahrain, with a bed capacity exceeding 2,000. The group employs over 12,000 professionals, including more than 2,500 physicians representing various specialties and subspecialties. HMG's services span primary, secondary, and tertiary care, with centers of excellence in cardiology, orthopedics, women's health, pediatrics, and oncology.
+                </p>
+                
+                <p class="mb-4">
+                    In its most recent financial performance for 2024, HMG reported revenues of SAR 11.2 billion, representing an 18% increase from the previous year, with a net income of SAR 2.3 billion (13.16% growth). The group has consistently delivered strong financial results, with a five-year CAGR of 14.5% from 2020 to 2024. <span class="citation">(HMG Financial Report, 2024)</span>
+                </p>
+                
+                
+                Copy
+                <div class="chart-container p-4 bg-white">
+                    <h3 class="text-lg mb-3 text-center">HMG Financial Performance (2022-2024)</h3>
+                    <div style="height: 450px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
+                            <rect x="80" y="50" width="550" height="350" fill="#f8f9fa" stroke="#e9ecef" />
+                            
+                            <!-- Axes -->
+                            <line x1="80" y1="400" x2="630" y2="400" stroke="#333" stroke-width="2" />
+                            <line x1="80" y1="50" x2="80" y2="400" stroke="#333" stroke-width="2" />
+                            
+                            <!-- Y Axis Grid Lines -->
+                            <line x1="80" y1="400" x2="630" y2="400" stroke="#ddd" stroke-width="1" />
+                            <line x1="80" y1="341.7" x2="630" y2="341.7" stroke="#ddd" stroke-width="1" /> <!-- 2 billion mark -->
+                            <line x1="80" y1="283.3" x2="630" y2="283.3" stroke="#ddd" stroke-width="1" /> <!-- 4 billion mark -->
+                            <line x1="80" y1="225" x2="630" y2="225" stroke="#ddd" stroke-width="1" />    <!-- 6 billion mark -->
+                            <line x1="80" y1="166.7" x2="630" y2="166.7" stroke="#ddd" stroke-width="1" /> <!-- 8 billion mark -->
+                            <line x1="80" y1="108.3" x2="630" y2="108.3" stroke="#ddd" stroke-width="1" /> <!-- 10 billion mark -->
+                            <line x1="80" y1="50" x2="630" y2="50" stroke="#ddd" stroke-width="1" />      <!-- 12 billion mark -->
+                            
+                            <!-- Y Axis Labels -->
+                            <text x="75" y="400" text-anchor="end" font-size="12">0</text>
+                            <text x="75" y="341.7" text-anchor="end" font-size="12">2</text>
+                            <text x="75" y="283.3" text-anchor="end" font-size="12">4</text>
+                            <text x="75" y="225" text-anchor="end" font-size="12">6</text>
+                            <text x="75" y="166.7" text-anchor="end" font-size="12">8</text>
+                            <text x="75" y="108.3" text-anchor="end" font-size="12">10</text>
+                            <text x="75" y="50" text-anchor="end" font-size="12">12</text>
+                            
+                            <!-- Y Axis Title -->
+                            <text x="30" y="225" text-anchor="middle" font-size="14" transform="rotate(-90, 30, 225)">SAR Billion</text>
+                            
+                            <!-- X Axis Labels -->
+                            <text x="200" y="425" text-anchor="middle" font-size="14" font-weight="bold">2022</text>
+                            <text x="350" y="425" text-anchor="middle" font-size="14" font-weight="bold">2023</text>
+                            <text x="500" y="425" text-anchor="middle" font-size="14" font-weight="bold">2024</text>
+                            
+                            <!-- REVENUE BARS - With correct height calculations -->
+                            <!-- 8.3 SAR Billion (2022) = 400 - (8.3/12 * 350) = 400 - 242.1 = 157.9 for y position -->
+                            <rect x="170" y="157.9" width="60" height="242.1" fill="#0054a6" opacity="0.9" rx="3" ry="3" />
+                            
+                            <!-- 9.5 SAR Billion (2023) = 400 - (9.5/12 * 350) = 400 - 277.1 = 122.9 for y position -->
+                            <rect x="320" y="122.9" width="60" height="277.1" fill="#0054a6" opacity="0.9" rx="3" ry="3" />
+                            
+                            <!-- 11.2 SAR Billion (2024) = 400 - (11.2/12 * 350) = 400 - 326.7 = 73.3 for y position -->
+                            <rect x="470" y="73.3" width="60" height="326.7" fill="#0054a6" opacity="0.9" rx="3" ry="3" />
+                            
+                            <!-- NET INCOME BARS - With correct height calculations -->
+                            <!-- 1.7 SAR Billion (2022) = 400 - (1.7/12 * 350) = 400 - 49.6 = 350.4 for y position -->
+                            <rect x="240" y="350.4" width="60" height="49.6" fill="#4caf50" opacity="0.9" rx="3" ry="3" />
+                            
+                            <!-- 2.0 SAR Billion (2023) = 400 - (2.0/12 * 350) = 400 - 58.3 = 341.7 for y position -->
+                            <rect x="390" y="341.7" width="60" height="58.3" fill="#4caf50" opacity="0.9" rx="3" ry="3" />
+                            
+                            <!-- 2.3 SAR Billion (2024) = 400 - (2.3/12 * 350) = 400 - 67.1 = 332.9 for y position -->
+                            <rect x="540" y="332.9" width="60" height="67.1" fill="#4caf50" opacity="0.9" rx="3" ry="3" />
+                            
+                            <!-- Data Labels for Revenue -->
+                            <text x="200" y="147.9" text-anchor="middle" font-size="14" font-weight="bold" fill="red">8.3</text>
+                            <text x="350" y="112.9" text-anchor="middle" font-size="14" font-weight="bold" fill="red">9.5</text>
+                            <text x="500" y="63.3" text-anchor="middle" font-size="14" font-weight="bold" fill="red">11.2</text>
+                            
+                            <!-- Data Labels for Net Income -->
+                            <text x="270" y="375" text-anchor="middle" font-size="14" font-weight="bold" fill="red">1.7</text>
+                            <text x="420" y="368" text-anchor="middle" font-size="14" font-weight="bold" fill="red">2.0</text>
+                            <text x="570" y="360" text-anchor="middle" font-size="14" font-weight="bold" fill="red">2.3</text>
+                            
+                            <!-- Legend -->
+                            <rect x="420" y="30" width="15" height="15" fill="#0054a6" rx="2" ry="2" />
+                            <text x="440" y="42" font-size="12" font-weight="bold">Revenue</text>
+                            
+                            <rect x="520" y="30" width="15" height="15" fill="#4caf50" rx="2" ry="2" />
+                            <text x="540" y="42" font-size="12" font-weight="bold">Net Income</text>
+                            
+                        </svg>
+                    </div>
+                </div>
+                
+
+                
+            
+            <div id="vision-mission" class="mt-8">
+                <h2 class="text-2xl mb-4">2.2 Vision and Mission</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl mb-3 text-center">Vision</h3>
+                        <p class="text-center italic">
+                            "To be the most trusted healthcare provider in medical excellence and patient experience globally."
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl mb-3 text-center">Mission</h3>
+                        <p class="text-center italic">
+                            "To develop and operate state-of-the-art medical facilities and provide innovative healthcare services to create value for people."
+                        </p>
+                    </div>
+                </div>
+                
+                <p class="mb-4">
+                    These guiding principles demonstrate HMG's commitment to excellence in healthcare delivery while creating value for all stakeholders, including patients, employees, shareholders, and the broader community. The four strategic pillars outlined in this Business Development Plan build upon these foundational principles and aim to further advance HMG's leadership position in the healthcare sector.
+                </p>
+            </div>
+            
+            <div id="current-position" class="mt-8">
+                <h2 class="text-2xl mb-4">2.3 Current Market Position</h2>
+                
+                <p class="mb-4">
+                    HMG currently holds a leading position in Saudi Arabia's private healthcare sector, with an estimated market share of 24% as of 2024. The group is distinguished by several core competencies:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-white p-4 rounded shadow-sm border-l-4 border-primary">
+                        <h3 class="text-lg mb-2">Clinical Excellence</h3>
+                        <p class="text-sm">
+                            HMG's facilities maintain world-class clinical standards, with accreditation from international bodies including JCI and CBAHI. The group's clinical outcomes rank among the best in the region across multiple specialties.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded shadow-sm border-l-4 border-primary">
+                        <h3 class="text-lg mb-2">Technological Innovation</h3>
+                        <p class="text-sm">
+                            The group has been at the forefront of healthcare technology adoption in the region, with fully integrated electronic health records, telemedicine capabilities, and advanced diagnostic and therapeutic equipment.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded shadow-sm border-l-4 border-primary">
+                        <h3 class="text-lg mb-2">Patient-Centered Care</h3>
+                        <p class="text-sm">
+                            HMG consistently achieves high patient satisfaction scores, with an average rating of 4.8/5 across facilities. The group's patient-centered approach includes comprehensive services, minimal wait times, and personalized care plans.
+                        </p>
+                    </div>
+                </div>
+                
+                <p class="mb-4">
+                    Despite its strong current position, HMG faces challenges in an increasingly competitive and rapidly evolving healthcare landscape. The four strategic pillars outlined in this plan address these challenges while capitalizing on emerging opportunities in line with Saudi Vision 2030.
+                </p>
+            </div>
+        </div>
+        
+        <div class="page-number">Page 3</div>
+    </div>
+    
+    <!-- Market Analysis -->
+    <div class="page" id="market-analysis">
+        <div class="section">
+            <h1 class="text-3xl mb-6 section-header">3. Market Analysis</h1>
+            
+            <div id="global-trends">
+                <h2 class="text-2xl mb-4">3.1 Global Healthcare Trends</h2>
+                
+                <p class="mb-4">
+                    The global healthcare industry is undergoing significant transformation, driven by technological advancement, changing patient expectations, and shifting demographics. Key trends that will shape the industry over the next five years include:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="key-point">
+                        <i class="fas fa-laptop-medical text-xl"></i>
+                        <div>
+                            <h3 class="text-lg font-medium">Digital Health Acceleration</h3>
+                            <p class="text-sm">The global digital health market is projected to grow at a CAGR of 18.6% from 2024 to 2030, reaching $780 billion by 2030. Telehealth utilization has stabilized at 15-20% of all outpatient care in developed markets, with continued growth expected. <span class="citation">(McKinsey Healthcare Insights, 2024)</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-point">
+                        <i class="fas fa-brain text-xl"></i>
+                        <div>
+                            <h3 class="text-lg font-medium">AI and Advanced Analytics</h3>
+                            <p class="text-sm">Healthcare AI applications are proliferating, with the market expected to reach $187.95 billion by 2030. From diagnostic support to operational optimization, AI is demonstrating tangible clinical and financial benefits across the care continuum. <span class="citation">(Grand View Research, 2025)</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-point">
+                        <i class="fas fa-user-md text-xl"></i>
+                        <div>
+                            <h3 class="text-lg font-medium">Value-Based Care Models</h3>
+                            <p class="text-sm">Healthcare systems globally are shifting from volume to value, with reimbursement increasingly tied to outcomes rather than procedures. This transition requires new care delivery models, enhanced data capabilities, and alignment of incentives across stakeholders. <span class="citation">(Deloitte Health Care Outlook, 2024)</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-point">
+                        <i class="fas fa-heartbeat text-xl"></i>
+                        <div>
+                            <h3 class="text-lg font-medium">Preventive and Personalized Medicine</h3>
+                            <p class="text-sm">The focus is shifting from treating disease to preventing it, with personalized medicine enabling tailored interventions based on genetic, environmental, and lifestyle factors. The global preventive healthcare market is expected to reach $493.3 billion by 2030. <span class="citation">(Precedence Research, 2024)</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="mb-4">
+                    These global trends present both opportunities and challenges for healthcare providers. Organizations that successfully adapt to these changes will be positioned for sustainable growth, while those that fail to evolve risk obsolescence in an increasingly dynamic market.
+                </p>
+            </div>
+            
+            <div id="regional-landscape" class="mt-8">
+                <h2 class="text-2xl mb-4">3.2 Regional Healthcare Landscape</h2>
+                
+                <p class="mb-4">
+                    The Middle East healthcare market is experiencing robust growth, driven by government investments, population growth, and a rising burden of lifestyle-related diseases. Key regional trends include:
+                </p>
+                
+                <div class="chart-container p-4 bg-white">
+                    <h3 class="text-lg mb-3 text-center">GCC Healthcare Market Size (USD Billion)</h3>
+                    <div style="height: 300px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Axes -->
+                            <line x1="50" y1="250" x2="550" y2="250" stroke="#333" stroke-width="2" />
+                            <line x1="50" y1="50" x2="50" y2="250" stroke="#333" stroke-width="2" />
+                            
+                            <!-- Y Axis Labels -->
+                            <text x="30" y="250" text-anchor="end" font-size="12">0</text>
+                            <text x="30" y="210" text-anchor="end" font-size="12">25</text>
+                            <text x="30" y="170" text-anchor="end" font-size="12">50</text>
+                            <text x="30" y="130" text-anchor="end" font-size="12">75</text>
+                            <text x="30" y="90" text-anchor="end" font-size="12">100</text>
+                            <text x="30" y="50" text-anchor="end" font-size="12">125</text>
+                            
+                            <!-- X Axis Labels -->
+                            <text x="100" y="270" text-anchor="middle" font-size="12">2020</text>
+                            <text x="200" y="270" text-anchor="middle" font-size="12">2022</text>
+                            <text x="300" y="270" text-anchor="middle" font-size="12">2024</text>
+                            <text x="400" y="270" text-anchor="middle" font-size="12">2026</text>
+                            <text x="500" y="270" text-anchor="middle" font-size="12">2028</text>
+                            
+                            <!-- Grid lines -->
+                            <line x1="50" y1="210" x2="550" y2="210" stroke="#ddd" stroke-width="1" />
+                            <line x1="50" y1="170" x2="550" y2="170" stroke="#ddd" stroke-width="1" />
+                            <line x1="50" y1="130" x2="550" y2="130" stroke="#ddd" stroke-width="1" />
+                            <line x1="50" y1="90" x2="550" y2="90" stroke="#ddd" stroke-width="1" />
+                            <line x1="50" y1="50" x2="550" y2="50" stroke="#ddd" stroke-width="1" />
+                            
+                            <!-- Bar Chart -->
+                            <rect x="75" y="200" width="50" height="50" fill="#0054a6" opacity="0.8" />
+                            <rect x="175" y="180" width="50" height="70" fill="#0054a6" opacity="0.9" />
+                            <rect x="275" y="150" width="50" height="100" fill="#0054a6" />
+                            <rect x="375" y="110" width="50" height="140" fill="#0054a6" opacity="0.7" />
+                            <rect x="475" y="80" width="50" height="170" fill="#0054a6" opacity="0.6" />
+                            
+                            <!-- KSA Segment -->
+                            <rect x="75" y="225" width="50" height="25" fill="#00a1df" />
+                            <rect x="175" y="215" width="50" height="35" fill="#00a1df" />
+                            <rect x="275" y="200" width="50" height="50" fill="#00a1df" />
+                            <rect x="375" y="180" width="50" height="70" fill="#00a1df" />
+                            <rect x="475" y="165" width="50" height="85" fill="#00a1df" />
+                            
+                            <!-- Legend -->
+                            <rect x="400" y="20" width="15" height="15" fill="#0054a6" />
+                            <text x="420" y="32" font-size="12">Total GCC Market</text>
+                            
+                            <rect x="400" y="45" width="15" height="15" fill="#00a1df" />
+                            <text x="420" y="57" font-size="12">Saudi Arabia Market</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <p class="mt-6 mb-4">
+                    The GCC healthcare market is projected to reach $104.6 billion by 2028, with Saudi Arabia accounting for approximately 60% of the total market. Key regional trends include:
+                </p>
+                
+                <ul class="list-disc pl-6 mb-4 space-y-2">
+                    <li>
+                        <strong>Healthcare Privatization:</strong> GCC governments are increasingly partnering with the private sector to develop and operate healthcare facilities, creating significant opportunities for established providers like HMG. Saudi Arabia aims to increase private sector participation in healthcare from 40% to 65% by 2030. <span class="citation">(MEED Healthcare Report, 2024)</span>
+                    </li>
+                    <li>
+                        <strong>Insurance Expansion:</strong> Mandatory health insurance requirements are being implemented across the region, expanding the insured population and driving demand for private healthcare services. In Saudi Arabia, insurance coverage has increased from 42% in 2020 to 67% in 2024. <span class="citation">(Saudi Central Bank, 2024)</span>
+                    </li>
+                    <li>
+                        <strong>Medical Tourism:</strong> GCC countries are increasingly investing in medical tourism infrastructure, aiming to reduce outbound medical travel while attracting international patients. The regional medical tourism market is expected to grow at 12.8% CAGR through 2030. <span class="citation">(GCC Healthcare Report, 2024)</span>
+                    </li>
+                    <li>
+                        <strong>Digital Health Adoption:</strong> GCC countries are rapidly embracing digital health technologies, with telemedicine adoption increasing by 300% between 2020 and 2024. Saudi Arabia and UAE lead the region in digital health investments. <span class="citation">(Arab Health Digital Report, 2024)</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="saudi-market" class="mt-8">
+                <h2 class="text-2xl mb-4">3.3 Saudi Arabian Healthcare Market</h2>
+                
+                <p class="mb-4">
+                    Saudi Arabia's healthcare market is the largest in the GCC, valued at approximately $45 billion in 2024 and projected to reach $69 billion by 2030. The market is characterized by several key dynamics:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h3 class="text-lg mb-3">Demographic Factors</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Population growing at 1.7% annually, projected to reach 39.5 million by 2030</li>
+                            <li>Young population (median age 31.8 years) but rapid aging expected</li>
+                            <li>Increasing life expectancy (currently 75 years, target of 80 years by 2030)</li>
+                            <li>Urbanization rate of 84%, concentrated in major cities</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg mb-3">Disease Burden</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>High prevalence of non-communicable diseases (NCDs)</li>
+                            <li>Diabetes affects 20% of adult population (4 million diagnosed cases)</li>
+                            <li>Obesity rate of 35% among adults</li>
+                            <li>Cardiovascular disease is leading cause of mortality</li>
+                            <li>Rising cancer incidence (85.2 cases per 100,000 population)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chart-container p-4 bg-white mt-6">
+                    <h3 class="text-lg mb-3 text-center">Saudi Healthcare Market Segmentation (2024)</h3>
+                    <div style="height: 300px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Pie Chart -->
+                            <circle cx="200" cy="150" r="120" fill="#f2f2f2" />
+                            
+                            <!-- Segments -->
+                            <path d="M200,150 L200,30 A120,120 0 0,1 313.2,114 Z" fill="#0054a6" />
+                            <path d="M200,150 L313.2,114 A120,120 0 0,1 260,253.3 Z" fill="#00a1df" />
+                            <path d="M200,150 L260,253.3 A120,120 0 0,1 106.8,210 Z" fill="#4caf50" />
+                            <path d="M200,150 L106.8,210 A120,120 0 0,1 86.8,86.8 Z" fill="#ff9800" />
+                            <path d="M200,150 L86.8,86.8 A120,120 0 0,1 200,30 Z" fill="#9c27b0" />
+                            
+                            <!-- Legend -->
+                            <rect x="290" y="70" width="15" height="15" fill="#0054a6" />
+                            <text x="280" y="83" font-size="10">Public Hospitals (42%)</text>
+                            
+                            <rect x="270" y="100" width="15" height="15" fill="#00a1df" />
+                            <text x="280" y="113" font-size="10">Private Hospitals (28%)</text>
+                            
+                            <rect x="270" y="130" width="15" height="15" fill="#4caf50" />
+                            <text x="280" y="143" font-size="10">Pharmaceuticals (15%)</text>
+                            
+                            <rect x="270" y="160" width="15" height="15" fill="#ff9800" />
+                            <text x="280" y="173" font-size="10">Medical Devices (10%)</text>
+                            
+                            <rect x="270" y="190" width="15" height="15" fill="#9c27b0" />
+                            <text x="280" y="203" font-size="10">Other (5%)</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <p class="mt-6 mb-4">
+                    The Saudi healthcare market presents significant opportunities for HMG, particularly in the following areas:
+                </p>
+                
+                <ul class="list-disc pl-6 mb-4 space-y-2">
+                    <li>
+                        <strong>Private Sector Expansion:</strong> The government aims to increase private sector participation in healthcare from 25% to 35% by 2030, creating opportunities for established providers like HMG to expand their footprint.
+                    </li>
+                    <li>
+                        <strong>Digital Health:</strong> Saudi Arabia's digital health market is projected to grow at 22% CAGR through 2030, reaching $1.3 billion by 2028. <span class="citation">(Frost & Sullivan, 2024)</span>
+                    </li>
+                    <li>
+                        <strong>Medical Tourism:</strong> Saudi Arabia aims to establish itself as a medical tourism hub, with a target of capturing 5% of the regional medical tourism market by 2030. The Saudi Arabia Medical Tourism Market is expected to reach $0.54 billion by 2029, growing at a CAGR of 22.52%. <span class="citation">(GlobalNewsWire, 2024)</span>
+                    </li>
+                    <li>
+                        <strong>Preventive Care:</strong> With the high prevalence of lifestyle-related diseases, there is growing demand for preventive and wellness services to address the burden of NCDs.
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="vision-2030" class="mt-8">
+                <h2 class="text-2xl mb-4">3.4 Vision 2030: Healthcare Transformation</h2>
+                
+                <p class="mb-4">
+                    Saudi Arabia's Vision 2030 has placed healthcare transformation at the center of its strategic priorities. The Health Sector Transformation Program (HSTP) aims to restructure the healthcare sector to enhance quality, improve access, and ensure sustainability.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-gray-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Key HSTP Objectives</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Improve access to healthcare services</li>
+                            <li>Enhance quality and efficiency of care</li>
+                            <li>Promote prevention vs. treatment</li>
+                            <li>Improve digital health infrastructure</li>
+                            <li>Increase private sector participation</li>
+                            <li>Develop healthcare workforce</li>
+                            <li>Achieve healthcare system sustainability</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Relevant Initiatives</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Digital Health Strategy:</strong> Aims to digitize healthcare services and establish comprehensive EHR systems</li>
+                            <li><strong>National Transformation Program:</strong> Includes healthcare privatization and PPP initiatives</li>
+                            <li><strong>Weqaya Program:</strong> National preventive health initiative focusing on NCDs</li>
+                            <li><strong>Medical Cities:</strong> Development of specialized medical cities and centers of excellence</li>
+                            <li><strong>Seha Virtual Hospital:</strong> World's largest virtual hospital connecting over 150 facilities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="mb-4">
+                    The government's healthcare transformation initiatives present significant opportunities for HMG to align its business development strategies with national priorities. By focusing on digital transformation, AI implementation, medical tourism, and preventive care, HMG can both expand its business and contribute to achieving the Vision 2030 healthcare objectives.
+                </p>
+                
+                <div class="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
+                    <p class="mb-0">
+                        <strong>Strategic Alignment Opportunity:</strong> HMG's four strategic pillars are directly aligned with the healthcare transformation objectives of Vision 2030, positioning the group to both capitalize on market opportunities and contribute to national healthcare priorities.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-number">Page 4</div>
+    </div>
+    
+    <!-- Competition Analysis -->
+    <div class="page" id="competition-analysis">
+        <div class="section">
+            <h1 class="text-3xl mb-6 section-header">4. Competition Analysis</h1>
+            
+            <div id="key-competitors">
+                <h2 class="text-2xl mb-4">4.1 Key Competitors</h2>
+                
+                <p class="mb-4">
+                    The Saudi Arabian healthcare market is becoming increasingly competitive, with both established players expanding their footprint and new entrants disrupting traditional models. HMG faces competition from several categories of providers:
+                </p>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl mb-3">Traditional Hospital Networks</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Saudi German Health
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Operates 10 hospitals across Saudi Arabia with 2,500+ beds</p>
+                                <p class="mb-2 text-sm"><strong>Revenue (2024):</strong> SAR 6.7 billion</p>
+                                <p class="mb-2 text-sm"><strong>Strengths:</strong> Strong brand recognition, aggressive expansion plans, international partnerships</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Geographic expansion, specialty care development, digital health initiatives</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Mouwasat Medical Services
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Operates 8 hospitals with 1,500+ beds, primarily in Eastern Province</p>
+                                <p class="mb-2 text-sm"><strong>Revenue (2024):</strong> SAR 2.8 billion</p>
+                                <p class="mb-2 text-sm"><strong>Strengths:</strong> Strong regional presence, efficient operations, high profitability</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Operational excellence, specialty service development, technology integration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Middle East Healthcare Company (MEAHCO)
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Operates 7 hospitals under the Saudi German brand, focused on Western region</p>
+                                <p class="mb-2 text-sm"><strong>Revenue (2024):</strong> SAR 2.3 billion</p>
+                                <p class="mb-2 text-sm"><strong>Strengths:</strong> Strong presence in Western Province, quality reputation, specialist care</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Expansion into central region, digital transformation, preventive care</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Dallah Health
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Operates 6 hospitals with 1,200+ beds, strong in Riyadh region</p>
+                                <p class="mb-2 text-sm"><strong>Revenue (2024):</strong> SAR 2.1 billion</p>
+                                <p class="mb-2 text-sm"><strong>Strengths:</strong> Long-established reputation, loyal customer base, specialty services</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Service diversification, ambulatory care expansion, digital health</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl mb-3">International Providers</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Mayo Clinic (KSA Partnership)
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Partnership with Saudi healthcare entities to develop specialized centers of excellence</p>
+                                <p class="mb-2 text-sm"><strong>Strengths:</strong> Global brand recognition, clinical expertise, research capabilities</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Knowledge transfer, specialty care development, clinical research</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Mediclinic Middle East
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Expanding presence in Saudi Arabia through partnerships and acquisitions</p>
+                                <p class="mb-2 text-sm"><strong>Strengths:</strong> International standards, management expertise, integrated care models</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Market entry, specialty development, operational excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl mb-3">Digital Health Disruptors</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Nala Health
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> AI-powered telemedicine platform with 1.5 million+ users</p>
+                                <p class="mb-2 text-sm"><strong>Funding:</strong> $50 million in venture capital</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> AI diagnostics, virtual primary care, corporate wellness</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Cura
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Telemedicine and home healthcare services platform</p>
+                                <p class="mb-2 text-sm"><strong>Funding:</strong> $35 million in venture capital</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Home healthcare delivery, chronic disease management, elderly care</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competitor-card">
+                            <div class="competitor-header">
+                                Alma Health
+                            </div>
+                            <div class="competitor-body">
+                                <p class="mb-2 text-sm"><strong>Profile:</strong> Digital pharmacy and chronic disease management platform</p>
+                                <p class="mb-2 text-sm"><strong>Funding:</strong> $30 million in venture capital</p>
+                                <p class="mb-0 text-sm"><strong>Strategic Focus:</strong> Medication management, chronic care, preventive health</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="competitive-position" class="mt-8">
+                <h2 class="text-2xl mb-4">4.2 HMG's Competitive Position</h2>
+                
+                <p class="mb-4">
+                    HMG holds a leading position in the Saudi healthcare market, with several distinct competitive advantages:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-xl mb-3">Competitive Strengths</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Scale and Network:</strong> Largest private healthcare provider in KSA with extensive geographic coverage</li>
+                            <li><strong>Digital Infrastructure:</strong> Industry-leading digital health capabilities and integrated systems</li>
+                            <li><strong>Financial Position:</strong> Strong balance sheet with SAR 2.3 billion net income (2024)</li>
+                            <li><strong>Brand Reputation:</strong> Consistently high patient satisfaction scores and quality ratings</li>
+                            <li><strong>Talent Pool:</strong> Ability to attract and retain top medical and administrative talent</li>
+                            <li><strong>Operational Efficiency:</strong> Industry-leading EBITDA margins of 24%</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-xl mb-3">Competitive Challenges</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Digital Disruption:</strong> Threat from tech-first healthcare startups with lower overhead</li>
+                            <li><strong>Geographic Concentration:</strong> Revenue highly concentrated in Riyadh region</li>
+                            <li><strong>International Competition:</strong> Entry of global healthcare brands through partnerships</li>
+                            <li><strong>Pricing Pressure:</strong> Increasing competition and insurance optimization</li>
+                            <li><strong>Regulatory Changes:</strong> Evolving healthcare regulations and compliance requirements</li>
+                            <li><strong>Market Saturation:</strong> Increasing hospital bed capacity in key urban centers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chart-container p-4 bg-white mt-6">
+                    <h3 class="text-lg mb-3 text-center">Competitive Positioning Matrix</h3>
+                    <div style="height: 400px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Axes -->
+                            <line x1="50" y1="350" x2="450" y2="350" stroke="#333" stroke-width="2" />
+                            <line x1="50" y1="50" x2="50" y2="350" stroke="#333" stroke-width="2" />
+                            
+                            <!-- Axes Labels -->
+                            <text x="250" y="390" text-anchor="middle" font-size="14">Clinical Excellence</text>
+                            <text x="10" y="200" text-anchor="middle" font-size="14" transform="rotate(-90,10,200)">Digital Capabilities</text>
+                            
+                            <!-- Grid lines -->
+                            <line x1="50" y1="200" x2="450" y2="200" stroke="#ddd" stroke-width="1" />
+                            <line x1="250" y1="50" x2="250" y2="350" stroke="#ddd" stroke-width="1" />
+                            
+                            <!-- Quadrant Labels -->
+                            <text x="150" y="125" text-anchor="middle" font-size="12" fill="#777">Digital Innovators</text>
+                            <text x="350" y="125" text-anchor="middle" font-size="12" fill="#777">Market Leaders</text>
+                            <text x="150" y="275" text-anchor="middle" font-size="12" fill="#777">Niche Players</text>
+                            <text x="350" y="275" text-anchor="middle" font-size="12" fill="#777">Clinical Leaders</text>
+                            
+                            <!-- HMG Circle -->
+                            <circle cx="350" cy="100" r="30" fill="#0054a6" opacity="0.8" />
+                            <text x="350" y="100" text-anchor="middle" font-size="12" fill="white">HMG</text>
+                            
+                            <!-- Competitor Circles -->
+                            <circle cx="290" cy="150" r="20" fill="#00a1df" opacity="0.8" />
+                            <text x="290" y="150" text-anchor="middle" font-size="10" fill="white">SGH</text>
+                            
+                            <circle cx="330" cy="200" r="20" fill="#4caf50" opacity="0.8" />
+                            <text x="330" y="200" text-anchor="middle" font-size="10" fill="white">MMS</text>
+                            
+                            <circle cx="380" cy="230" r="20" fill="#ff9800" opacity="0.8" />
+                            <text x="380" y="230" text-anchor="middle" font-size="10" fill="white">MEAHCO</text>
+                            
+                            <circle cx="270" cy="250" r="20" fill="#9c27b0" opacity="0.8" />
+                            <text x="270" y="250" text-anchor="middle" font-size="10" fill="white">Dallah</text>
+                            
+                            <circle cx="150" cy="120" r="15" fill="#e91e63" opacity="0.8" />
+                            <text x="150" y="120" text-anchor="middle" font-size="9" fill="white">Nala</text>
+                            
+                            <circle cx="120" cy="150" r="15" fill="#673ab7" opacity="0.8" />
+                            <text x="120" y="150" text-anchor="middle" font-size="9" fill="white">Cura</text>
+                            
+                            <circle cx="400" cy="160" r="15" fill="#2196f3" opacity="0.8" />
+                            <text x="400" y="160" text-anchor="middle" font-size="9" fill="white">Mayo</text>
+                            
+                            <circle cx="320" cy="280" r="15" fill="#795548" opacity="0.8" />
+                            <text x="320" y="280" text-anchor="middle" font-size="9" fill="white">Mediclinic</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <p class="mt-6 mb-4">
+                    This competitive analysis indicates that HMG is well-positioned as a market leader with strong performance across both clinical excellence and digital capabilities. To maintain and extend this leadership position, HMG must address emerging competitive threats through continued innovation across the four strategic pillars identified in this plan.
+                </p>
+            </div>
+            
+            <div id="swot-analysis" class="mt-8">
+                <h2 class="text-2xl mb-4">4.3 SWOT Analysis</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="swot-box swot-strengths">
+                        <h3 class="swot-title text-green-700">Strengths</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Market leadership position with strong brand recognition</li>
+                            <li>Extensive network of facilities across key regions</li>
+                            <li>Advanced digital infrastructure and technological capabilities</li>
+                            <li>Strong financial performance and healthy balance sheet</li>
+                            <li>Established relationships with insurers and corporate clients</li>
+                            <li>Ability to attract and retain top medical talent</li>
+                            <li>Operational efficiency and high-quality care metrics</li>
+                            <li>Vertically integrated service model (hospitals, clinics, pharmacies, labs)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="swot-box swot-weaknesses">
+                        <h3 class="swot-title text-red-700">Weaknesses</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Geographic concentration in major urban centers</li>
+                            <li>Limited presence in emerging healthcare segments (home care, remote monitoring)</li>
+                            <li>Traditional revenue model highly dependent on inpatient services</li>
+                            <li>Nascent preventive care and wellness offerings</li>
+                            <li>Complex organizational structure potentially limiting agility</li>
+                            <li>Varying levels of digital adoption across different facilities</li>
+                            <li>Limited international patient market penetration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="swot-box swot-opportunities">
+                        <h3 class="swot-title text-blue-700">Opportunities</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Expansion of digital health services beyond telemedicine</li>
+                            <li>Development of AI-powered diagnostic and care management tools</li>
+                            <li>Growth in medical tourism from GCC and broader MENA region</li>
+                            <li>Increasing demand for preventive care and wellness services</li>
+                            <li>Vision 2030 healthcare initiatives and privatization</li>
+                            <li>Expansion of mandatory health insurance coverage</li>
+                            <li>Strategic partnerships with international centers of excellence</li>
+                            <li>Development of specialized centers addressing high-burden diseases</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="swot-box swot-threats">
+                        <h3 class="swot-title text-orange-700">Threats</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Increasing competition from both traditional and digital providers</li>
+                            <li>Entry of international healthcare chains into Saudi market</li>
+                            <li>Disruptive healthcare models focusing on specific services</li>
+                            <li>Regulatory changes affecting reimbursement and operations</li>
+                            <li>Pricing pressure from insurers and government payers</li>
+                            <li>Skilled healthcare workforce shortages</li>
+                            <li>Rapid technological changes requiring continuous investment</li>
+                            <li>Cybersecurity and data privacy risks in digital health</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="mb-4">
+                    This SWOT analysis highlights the strategic imperative for HMG to leverage its strengths while addressing weaknesses, capitalize on emerging opportunities, and mitigate potential threats. The four strategic pillars identified in this plan directly respond to these SWOT factors, positioning HMG to maintain and extend its market leadership.
+                </p>
+            </div>
+        </div>
+        
+        <div class="page-number">Page 5</div>
+    </div>
+    
+    <!-- Strategic Pillars -->
+    <div class="page" id="strategic-pillars">
+        <div class="section">
+            <h1 class="text-3xl mb-6 section-header">5. Strategic Pillars</h1>
+            
+            <p class="mb-6">
+                Based on the comprehensive market and competitive analysis, HMG will focus on four strategic pillars to drive business development over the next five years. These pillars are designed to leverage HMG's core strengths, address market opportunities, and align with Saudi Vision 2030 healthcare transformation objectives.
+            </p>
+            
+            <div id="digital-transformation" class="mb-12">
+                <div class="flex items-center mb-4">
+                    <div class="pillar-icon mr-4">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <h2 class="text-2xl">5.1 Digital Transformation Strategy</h2>
+                </div>
+                
+                <div class="bg-gray-50 p-5 rounded-lg mb-6">
+                    <h3 class="text-xl mb-3">Strategic Vision</h3>
+                    <p class="mb-0">
+                        Transform HMG from a traditional healthcare provider to a digital health ecosystem that seamlessly integrates physical care with digital touchpoints, creating a superior patient experience while extending HMG's reach beyond its physical facilities.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Digital Patient Engagement</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Enhanced Mobile App:</strong> Comprehensive patient app for appointment scheduling, telehealth visits, lab results, medication management, and secure messaging</li>
+                            <li><strong>Patient Portal Evolution:</strong> Advanced portal with personalized health dashboards, care plan tracking, educational content, and integration with wearables</li>
+                            <li><strong>Digital Wayfinding:</strong> Indoor navigation across all facilities with real-time updates on wait times and resource availability</li>
+                            <li><strong>Virtual Waiting Room:</strong> Remote check-in capabilities, digital queueing system, and waiting time transparency</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Telehealth and Virtual Care</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Comprehensive Telehealth:</strong> Expand virtual care capabilities across all major specialties, with dedicated telehealth providers</li>
+                            <li><strong>Hybrid Care Models:</strong> Develop care pathways that blend virtual and in-person visits for chronic disease management</li>
+                            <li><strong>Remote Monitoring:</strong> Implement remote patient monitoring for chronic conditions with integration into clinical workflows</li>
+                            <li><strong>Virtual Specialty Consults:</strong> Expand specialist access to underserved regions through virtual consultation networks</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Digital Operational Excellence</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Advanced EHR Optimization:</strong> Enhance clinical decision support, documentation efficiency, and interoperability</li>
+                            <li><strong>Digital Workforce Solutions:</strong> Implement digital tools for staff scheduling, clinical communication, and education</li>
+                            <li><strong>Supply Chain Digitization:</strong> Enhance inventory management, procurement, and analytics through digital tools</li>
+                            <li><strong>Digital Quality Management:</strong> Implement digital systems for tracking, analyzing, and improving quality metrics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chart-container p-4 bg-white mt-6">
+                    <h3 class="text-lg mb-3 text-center">Digital Health Ecosystem Model</h3>
+                    <div style="height: 400px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Central Circle -->
+                            <circle cx="300" cy="200" r="80" fill="#0054a6" />
+                            <text x="300" y="190" text-anchor="middle" font-size="16" fill="white">HMG Digital</text>
+                            <text x="300" y="210" text-anchor="middle" font-size="16" fill="white">Health Core</text>
+                            
+                            <!-- Surrounding Circles -->
+                            <circle cx="150" cy="100" r="50" fill="#00a1df" />
+                            <text x="150" y="100" text-anchor="middle" font-size="12" fill="white">Patient</text>
+                            <text x="150" y="115" text-anchor="middle" font-size="12" fill="white">Engagement</text>
+                            
+                            <circle cx="150" cy="300" r="50" fill="#00a1df" />
+                            <text x="150" y="300" text-anchor="middle" font-size="12" fill="white">Virtual</text>
+                            <text x="150" y="315" text-anchor="middle" font-size="12" fill="white">Care</text>
+                            
+                            <circle cx="450" cy="100" r="50" fill="#00a1df" />
+                            <text x="450" y="100" text-anchor="middle" font-size="12" fill="white">Digital</text>
+                            <text x="450" y="115" text-anchor="middle" font-size="12" fill="white">Operations</text>
+                            
+                            <circle cx="450" cy="300" r="50" fill="#00a1df" />
+                            <text x="450" y="300" text-anchor="middle" font-size="12" fill="white">Data &</text>
+                            <text x="450" y="315" text-anchor="middle" font-size="12" fill="white">Analytics</text>
+                            
+                            <!-- Connecting Lines -->
+                            <line x1="210" y1="120" x2="240" y2="150" stroke="#0054a6" stroke-width="2" />
+                            <line x1="210" y1="280" x2="240" y2="250" stroke="#0054a6" stroke-width="2" />
+                            <line x1="390" y1="120" x2="360" y2="150" stroke="#0054a6" stroke-width="2" />
+                            <line x1="390" y1="280" x2="360" y2="250" stroke="#0054a6" stroke-width="2" />
+                            
+                            <!-- Sub-Components -->
+                            <circle cx="80" cy="80" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="80" y="80" text-anchor="middle" font-size="9" fill="white">Mobile</text>
+                            <text x="80" y="92" text-anchor="middle" font-size="9" fill="white">App</text>
+                            
+                            <circle cx="80" cy="130" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="80" y="130" text-anchor="middle" font-size="9" fill="white">Patient</text>
+                            <text x="80" y="142" text-anchor="middle" font-size="9" fill="white">Portal</text>
+                            
+                            <circle cx="80" cy="270" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="80" y="270" text-anchor="middle" font-size="9" fill="white">Telehealth</text>
+                            
+                            <circle cx="80" cy="320" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="80" y="320" text-anchor="middle" font-size="9" fill="white">Remote</text>
+                            <text x="80" y="332" text-anchor="middle" font-size="9" fill="white">Monitoring</text>
+                            
+                            <circle cx="520" cy="80" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="520" y="80" text-anchor="middle" font-size="9" fill="white">EHR</text>
+                            <text x="520" y="92" text-anchor="middle" font-size="9" fill="white">Optimization</text>
+                            
+                            <circle cx="520" cy="130" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="520" y="130" text-anchor="middle" font-size="9" fill="white">Workflow</text>
+                            <text x="520" y="142" text-anchor="middle" font-size="9" fill="white">Automation</text>
+                            
+                            <circle cx="520" cy="270" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="520" y="270" text-anchor="middle" font-size="9" fill="white">Predictive</text>
+                            <text x="520" y="282" text-anchor="middle" font-size="9" fill="white">Analytics</text>
+                            
+                            <circle cx="520" cy="320" r="30" fill="#4caf50" opacity="0.8" />
+                            <text x="520" y="320" text-anchor="middle" font-size="9" fill="white">Clinical</text>
+                            <text x="520" y="332" text-anchor="middle" font-size="9" fill="white">Dashboards</text>
+                            
+                            <!-- Connecting Lines to Sub-Components -->
+                            <line x1="108" y1="85" x2="127" y2="95" stroke="#00a1df" stroke-width="1" />
+                            <line x1="108" y1="125" x2="127" y2="115" stroke="#00a1df" stroke-width="1" />
+                            <line x1="108" y1="275" x2="127" y2="285" stroke="#00a1df" stroke-width="1" />
+                            <line x1="108" y1="315" x2="127" y2="305" stroke="#00a1df" stroke-width="1" />
+                            <line x1="492" y1="85" x2="473" y2="95" stroke="#00a1df" stroke-width="1" />
+                            <line x1="492" y1="125" x2="473" y2="115" stroke="#00a1df" stroke-width="1" />
+                            <line x1="492" y1="275" x2="473" y2="285" stroke="#00a1df" stroke-width="1" />
+                            <line x1="492" y1="315" x2="473" y2="305" stroke="#00a1df" stroke-width="1" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Key Performance Indicators</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li>Digital channel utilization rate (target: 70% by 2028)</li>
+                            <li>Telehealth visit volume (target: 30% of outpatient visits by 2028)</li>
+                            <li>Patient portal activation rate (target: 85% by 2027)</li>
+                            <li>Digital revenue contribution (target: 25% by 2028)</li>
+                            <li>Patient satisfaction with digital touchpoints (target: 4.8/5)</li>
+                            <li>Operational efficiency improvements (target: 20% reduction in administrative costs)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Implementation Requirements</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Technology Infrastructure:</strong> Cloud computing capabilities, API architecture, cybersecurity enhancements</li>
+                            <li><strong>Organizational Structure:</strong> Dedicated digital health division with centralized governance</li>
+                            <li><strong>Talent Acquisition:</strong> Digital health leaders, data scientists, UX specialists, health informaticists</li>
+                            <li><strong>Partnerships:</strong> Technology vendors, digital health startups, academic institutions</li>
+                            <li><strong>Regulatory Compliance:</strong> Data privacy frameworks, telehealth licensing, digital health regulations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 p-5 rounded-lg mt-6">
+                    <h3 class="text-lg mb-3">Vision 2030 Alignment</h3>
+                    <p class="mb-4">
+                        This digital transformation strategy directly supports several Vision 2030 healthcare objectives:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-1 text-sm">
+                        <li>Enhancing healthcare access through virtual care and digital channels</li>
+                        <li>Improving healthcare efficiency through digitization and automation</li>
+                        <li>Supporting healthcare innovation and digital health ecosystem development</li>
+                        <li>Enabling data-driven healthcare delivery and planning</li>
+                        <li>Aligning with the National Digital Transformation strategy</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="ai-healthcare" class="mb-12">
+                <div class="flex items-center mb-4">
+                    <div class="pillar-icon mr-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h2 class="text-2xl">5.2 AI in Healthcare</h2>
+                </div>
+                
+                <div class="bg-gray-50 p-5 rounded-lg mb-6">
+                    <h3 class="text-xl mb-3">Strategic Vision</h3>
+                    <p class="mb-0">
+                        Harness the power of artificial intelligence to enhance clinical decision-making, improve patient outcomes, optimize operational efficiency, and create new value-added services that differentiate HMG in the marketplace.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Clinical AI Applications</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Diagnostic Support:</strong> AI-powered medical imaging interpretation for radiology, pathology, and dermatology</li>
+                            <li><strong>Clinical Decision Support:</strong> AI-enhanced protocols and treatment recommendations integrated with EHR</li>
+                            <li><strong>Risk Prediction Models:</strong> AI tools to identify patients at risk for adverse events or disease progression</li>
+                            <li><strong>Genomic Analysis:</strong> AI for genomic data interpretation in personalized medicine applications</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Operational AI Applications</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Resource Optimization:</strong> Predictive models for patient flow, staff scheduling, and resource allocation</li>
+                            <li><strong>Process Automation:</strong> Intelligent automation of administrative and clinical workflows</li>
+                            <li><strong>Supply Chain Intelligence:</strong> AI-powered demand forecasting and inventory optimization</li>
+                            <li><strong>Quality Improvement:</strong> AI-driven analysis of clinical variation and quality metrics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Patient-Facing AI Solutions</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>AI Health Assistants:</strong> Virtual assistants for patient education, symptom assessment, and care navigation</li>
+                            <li><strong>Personalized Care Plans:</strong> AI-generated personalized wellness and treatment recommendations</li>
+                            <li><strong>Smart Remote Monitoring:</strong> AI analysis of patient-generated data from wearables and home devices</li>
+                            <li><strong>Behavioral Health Support:</strong> AI-powered mental health screening and digital therapeutics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chart-container p-4 bg-white mt-6">
+                    <h3 class="text-lg mb-3 text-center">AI Implementation Framework</h3>
+                    <div style="height: 350px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="600" height="350" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Foundation Layer -->
+                            <rect x="100" y="270" width="400" height="50" fill="#0054a6" rx="5" ry="5" />
+                            <text x="300" y="300" text-anchor="middle" font-size="16" fill="white">AI Infrastructure and Governance</text>
+                            
+                            <!-- Middle Layer -->
+                            <rect x="130" y="200" width="340" height="50" fill="#00a1df" rx="5" ry="5" />
+                            <text x="300" y="230" text-anchor="middle" font-size="16" fill="white">Data Integration and Analytics Platform</text>
+                            
+                            <!-- Application Layer Boxes -->
+                            <rect x="150" y="130" width="100" height="50" fill="#4caf50" rx="5" ry="5" />
+                            <text x="200" y="160" text-anchor="middle" font-size="14" fill="white">Clinical AI</text>
+                            
+                            <rect x="260" y="130" width="100" height="50" fill="#ff9800" rx="5" ry="5" />
+                            <text x="310" y="160" text-anchor="middle" font-size="14" fill="white">Operational AI</text>
+                            
+                            <rect x="370" y="130" width="100" height="50" fill="#9c27b0" rx="5" ry="5" />
+                            <text x="420" y="160" text-anchor="middle" font-size="14" fill="white">Patient AI</text>
+                            
+                            <!-- Value Layer -->
+                            <rect x="170" y="60" width="280" height="50" fill="#e91e63" rx="5" ry="5" />
+                            <text x="310" y="90" text-anchor="middle" font-size="16" fill="white">Healthcare Value Creation</text>
+                            
+                            <!-- Connecting Lines -->
+                            <line x1="300" y1="270" x2="300" y2="250" stroke="#fff" stroke-width="2" />
+                            <line x1="300" y1="200" x2="300" y2="180" stroke="#fff" stroke-width="2" />
+                            <line x1="200" y1="130" x2="300" y2="110" stroke="#fff" stroke-width="2" />
+                            <line x1="310" y1="130" x2="310" y2="110" stroke="#fff" stroke-width="2" />
+                            <line x1="420" y1="130" x2="310" y2="110" stroke="#fff" stroke-width="2" />
+                            
+                            <!-- Detail Labels -->
+                            <text x="100" y="340" font-size="9" fill="#333">• Data Security</text>
+                            <text x="200" y="340" font-size="9" fill="#333">• Ethical AI Use</text>
+                            <text x="300" y="340" font-size="9" fill="#333">• Regulatory Compliance</text>
+                            <text x="450" y="340" font-size="9" fill="#333">• Technical Standards</text>
+                            
+                            <text x="140" y="190" font-size="9" fill="#333">• EHR Data</text>
+                            <text x="210" y="190" font-size="9" fill="#333">• Imaging Data</text>
+                            <text x="280" y="190" font-size="9" fill="#333">• Genomic Data</text>
+                            <text x="360" y="190" font-size="9" fill="#333">• Operational Data</text>
+                            <text x="450" y="190" font-size="9" fill="#333">• External Data</text>
+                            
+                            <text x="180" y="45" font-size="9" fill="#333">• Clinical Outcomes</text>
+                            <text x="290" y="45" font-size="9" fill="#333">• Operational Efficiency</text>
+                            <text x="410" y="45" font-size="9" fill="#333">• Patient Experience</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">AI Center of Excellence</h3>
+                        <p class="mb-4 text-sm">
+                            Establish a dedicated AI Center of Excellence within HMG to drive innovation, ensure best practices, and coordinate AI initiatives across the organization. The center will:
+                        </p>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Develop and maintain AI governance frameworks</li>
+                            <li>Foster partnerships with technology providers and academic institutions</li>
+                            <li>Build AI capabilities through training and recruitment</li>
+                            <li>Evaluate and prioritize AI use cases</li>
+                            <li>Manage AI solution implementation</li>
+                            <li>Ensure ethical AI use and regulatory compliance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Key Performance Indicators</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li>Clinical outcome improvements (target: 15% reduction in preventable complications)</li>
+                            <li>Diagnostic accuracy enhancement (target: 20% improvement in early detection)</li>
+                            <li>Operational efficiency gains (target: 25% reduction in administrative burden)</li>
+                            <li>AI adoption rate among clinicians (target: 80% by 2028)</li>
+                            <li>Return on AI investments (target: 200% ROI within 3 years of implementation)</li>
+                            <li>Number of AI-enabled services launched (target: 15 by 2028)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 p-5 rounded-lg mt-6">
+                    <h3 class="text-lg mb-3">Vision 2030 Alignment</h3>
+                    <p class="mb-4">
+                        The AI healthcare strategy supports Saudi Arabia's Vision 2030 objectives in multiple dimensions:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-1 text-sm">
+                        <li>Aligns with the National AI Strategy 2031, which aims to position Saudi Arabia as a global leader in AI</li>
+                        <li>Supports digital healthcare transformation goals by enhancing diagnostic capabilities and treatment precision</li>
+                        <li>Contributes to healthcare system efficiency and sustainability through resource optimization</li>
+                        <li>Enables data-driven healthcare delivery and planning, a core Vision 2030 healthcare objective</li>
+                        <li>Creates opportunities for knowledge transfer and local AI talent development</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="medical-tourism" class="mb-12">
+                <div class="flex items-center mb-4">
+                    <div class="pillar-icon mr-4">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h2 class="text-2xl">5.3 Medical Tourism Program</h2>
+                </div>
+                
+                <div class="bg-gray-50 p-5 rounded-lg mb-6">
+                    <h3 class="text-xl mb-3">Strategic Vision</h3>
+                    <p class="mb-0">
+                        Establish HMG as the premier destination for medical tourism in the Middle East by offering comprehensive, high-quality healthcare services that attract international patients, particularly from GCC countries, broader MENA region, and key African markets.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Centers of Excellence</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Cardiology & Cardiac Surgery:</strong> Comprehensive cardiac care with advanced interventional and surgical capabilities</li>
+                            <li><strong>Orthopedics & Sports Medicine:</strong> Joint replacement, spine surgery, and sports injury treatment</li>
+                            <li><strong>Oncology:</strong> Precision cancer treatment including immunotherapy and minimally invasive surgical options</li>
+                            <li><strong>Neurosciences:</strong> Advanced neurological care and neurosurgery</li>
+                            <li><strong>Transplant Program:</strong> Comprehensive organ transplantation services</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">International Patient Services</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Dedicated International Department:</strong> Single point of contact for all international patient needs</li>
+                            <li><strong>Travel Coordination:</strong> Assistance with visa processing, accommodation, and transportation</li>
+                            <li><strong>Multilingual Support:</strong> Communication services in key languages (Arabic, English, French, Urdu, Hindi)</li>
+                            <li><strong>Cultural Sensitivity:</strong> Culturally appropriate care, dietary considerations, and prayer facilities</li>
+                            <li><strong>Financial Services:</strong> Transparent pricing, insurance coordination, and payment options</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Strategic Partnerships</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>International Insurers:</strong> Direct billing arrangements with global health insurers</li>
+                            <li><strong>Government Agencies:</strong> Partnerships with health ministries for sponsored patients</li>
+                            <li><strong>Travel Industry:</strong> Collaboration with travel agencies and hospitality providers</li>
+                            <li><strong>Concierge Services:</strong> Premium services for high-net-worth patients</li>
+                            <li><strong>Medical Facilitators:</strong> Relationships with reputable medical tourism facilitators</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chart-container p-4 bg-white mt-6">
+                    <h3 class="text-lg mb-3 text-center">Target Markets and Specialties</h3>
+                    <div style="height: 400px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Map Background -->
+                            <rect x="50" y="50" width="500" height="300" fill="#f5f5f5" rx="5" ry="5" />
+                            
+                            <!-- Region Shapes (simplified) -->
+                            <!-- GCC -->
+                            <path d="M300,200 L350,180 L370,200 L350,220 L330,230 L300,220 Z" fill="#0054a6" opacity="0.7" />
+                            
+                            <!-- North Africa -->
+                            <path d="M200,180 L250,170 L280,190 L260,220 L220,210 Z" fill="#00a1df" opacity="0.7" />
+                            
+                            <!-- East Africa -->
+                            <path d="M320,240 L350,230 L370,260 L340,280 L320,260 Z" fill="#4caf50" opacity="0.7" />
+                            
+                            <!-- South Asia -->
+                            <path d="M400,200 L430,190 L450,210 L440,240 L410,230 Z" fill="#ff9800" opacity="0.7" />
+                            
+                            <!-- Region Labels -->
+                            <text x="330" y="200" text-anchor="middle" font-size="12" fill="white">GCC</text>
+                            <text x="240" y="200" text-anchor="middle" font-size="9" fill="white">North Africa</text>
+                            <text x="340" y="255" text-anchor="middle" font-size="9" fill="white">East Africa</text>
+                            <text x="425" y="215" text-anchor="middle" font-size="9" fill="white">South Asia</text>
+                            
+                            <!-- Specialty Callouts -->
+                            <line x1="330" y1="200" x2="480" y2="120" stroke="#0054a6" stroke-width="1" stroke-dasharray="5,2" />
+                            <circle cx="500" cy="120" r="20" fill="#0054a6" />
+                            <text x="500" y="120" text-anchor="middle" font-size="10" fill="white">Cardiac</text>
+                            <text x="500" y="130" text-anchor="middle" font-size="8" fill="white">Care</text>
+                            
+                            <line x1="240" y1="200" x2="120" y2="150" stroke="#00a1df" stroke-width="1" stroke-dasharray="5,2" />
+                            <circle cx="100" cy="150" r="20" fill="#00a1df" />
+                            <text x="100" y="150" text-anchor="middle" font-size="10" fill="white">Ortho-</text>
+                            <text x="100" y="160" text-anchor="middle" font-size="8" fill="white">pedics</text>
+                            
+                            <line x1="340" y1="255" x2="480" y2="280" stroke="#4caf50" stroke-width="1" stroke-dasharray="5,2" />
+                            <circle cx="500" cy="280" r="20" fill="#4caf50" />
+                            <text x="500" y="280" text-anchor="middle" font-size="9" fill="white">Oncology</text>
+                            
+                            <line x1="425" y1="215" x2="120" y2="250" stroke="#ff9800" stroke-width="1" stroke-dasharray="5,2" />
+                            <circle cx="100" cy="250" r="20" fill="#ff9800" />
+                            <text x="100" y="250" text-anchor="middle" font-size="9" fill="white">Fertility</text>
+                            <text x="100" y="260" text-anchor="middle" font-size="8" fill="white">Treatment</text>
+                            
+                            <!-- Legend -->
+                            <rect x="60" y="320" width="16" height="16" fill="#0054a6" opacity="0.7" />
+                            <text x="80" y="332" font-size="10" text-anchor="start">GCC - Primary Focus</text>
+                            
+                            <rect x="200" y="320" width="16" height="16" fill="#00a1df" opacity="0.7" />
+                            <text x="220" y="332" font-size="10" text-anchor="start">North Africa - Secondary Focus</text>
+                            
+                            <rect x="60" y="350" width="16" height="16" fill="#4caf50" opacity="0.7" />
+                            <text x="80" y="362" font-size="10" text-anchor="start">East Africa - Tertiary Focus</text>
+                            
+                            <rect x="200" y="350" width="15" height="15" fill="#ff9800" opacity="0.7" />
+                            <text x="220" y="362" font-size="10" text-anchor="start">South Asia - Emerging Focus</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Marketing and Outreach Strategy</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Digital Marketing:</strong> Multilingual website with virtual tours, doctor profiles, and patient testimonials; targeted social media campaigns</li>
+                            <li><strong>International Representative Offices:</strong> Establish offices in key source markets (UAE, Kuwait, Nigeria, Egypt)</li>
+                            <li><strong>Medical Conferences:</strong> Participate in major regional medical conferences to build physician networks</li>
+                            <li><strong>Direct-to-Consumer Events:</strong> Host health awareness events in target markets</li>
+                            <li><strong>Diplomatic Channels:</strong> Engage with embassies and consulates to promote healthcare services</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Key Performance Indicators</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li>International patient volume (target: 15,000 patients annually by 2028)</li>
+                            <li>Revenue from international patients (target: 15% of total revenue by 2028)</li>
+                            <li>Patient satisfaction score for international patients (target: 4.8/5)</li>
+                            <li>International accreditations and certifications (target: all major international accreditations)</li>
+                            <li>Source market diversification (target: no single market exceeding 30% of international volume)</li>
+                            <li>Return visit rate for international patients (target: 40%)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 p-5 rounded-lg mt-6">
+                    <h3 class="text-lg mb-3">Vision 2030 Alignment</h3>
+                    <p class="mb-4">
+                        The Medical Tourism Program strongly aligns with Saudi Vision 2030 objectives:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-1 text-sm">
+                        <li>Supports economic diversification by developing the healthcare sector as a revenue generator beyond domestic services</li>
+                        <li>Aligns with the goal of positioning Saudi Arabia as a global healthcare destination, capturing a share of the $100 billion Middle East medical tourism market</li>
+                        <li>Contributes to enhancing Saudi Arabia's global reputation for healthcare excellence</li>
+                        <li>Creates opportunities for knowledge transfer and talent development through exposure to international cases</li>
+                        <li>Supports the broader tourism development objectives of Vision 2030 through health tourism</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="wellness-prevention">
+                <div class="flex items-center mb-4">
+                    <div class="pillar-icon mr-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h2 class="text-2xl">5.4 Wellness and Preventive Care Programs</h2>
+                </div>
+                
+                <div class="bg-gray-50 p-5 rounded-lg mb-6">
+                    <h3 class="text-xl mb-3">Strategic Vision</h3>
+                    <p class="mb-0">
+                        Transition from a predominantly curative care model to an integrated health and wellness approach that emphasizes prevention, early intervention, and lifestyle management, creating a new paradigm of healthcare delivery aligned with global trends and local needs.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Comprehensive Wellness Centers</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Executive Health Programs:</strong> Comprehensive health assessments with personalized wellness plans</li>
+                            <li><strong>Women's Wellness:</strong> Gender-specific preventive care and screening services</li>
+                            <li><strong>Sports Performance:</strong> Athletic assessment, injury prevention, and performance optimization</li>
+                            <li><strong>Lifestyle Medicine:</strong> Nutrition counseling, fitness assessment, and stress management</li>
+                            <li><strong>Aging Well:</strong> Programs focused on healthy aging and maintaining functional independence</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Chronic Disease Prevention</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Diabetes Prevention:</strong> Risk assessment, screening, and lifestyle intervention programs</li>
+                            <li><strong>Cardiovascular Health:</strong> Heart health assessment and prevention programs</li>
+                            <li><strong>Cancer Screening:</strong> Comprehensive early detection protocols for major cancers</li>
+                            <li><strong>Mental Health:</strong> Early intervention programs for depression, anxiety, and stress management</li>
+                            <li><strong>Metabolic Health:</strong> Programs addressing obesity, metabolic syndrome, and related conditions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg mb-3">Corporate Wellness Solutions</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Corporate Health Assessments:</strong> On-site and virtual health screenings for employees</li>
+                            <li><strong>Workplace Wellness Programs:</strong> Customized wellness initiatives for corporate clients</li>
+                            <li><strong>Occupational Health:</strong> Pre-employment assessments and workplace health services</li>
+                            <li><strong>Employee Assistance:</strong> Mental health support and wellness coaching</li>
+                            <li><strong>Health Analytics:</strong> Aggregate reporting to guide corporate wellness strategy</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chart-container p-4 bg-white mt-6">
+                    <h3 class="text-lg mb-3 text-center">Integrated Wellness and Prevention Model</h3>
+                    <div style="height: 350px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                        <svg width="600" height="350" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Individual/Core -->
+                            <circle cx="300" cy="175" r="70" fill="#0054a6" />
+                            <text x="300" y="165" text-anchor="middle" font-size="16" fill="white">Individual</text>
+                            <text x="300" y="185" text-anchor="middle" font-size="16" fill="white">Wellness</text>
+                            
+                            <!-- Surrounding Circles - Layer 1 -->
+                            <circle cx="200" cy="175" r="40" fill="#00a1df" />
+                            <text x="200" y="170" text-anchor="middle" font-size="11" fill="white">Physical</text>
+                            <text x="200" y="185" text-anchor="middle" font-size="11" fill="white">Health</text>
+                            
+                            <circle cx="400" cy="175" r="40" fill="#00a1df" />
+                            <text x="400" y="170" text-anchor="middle" font-size="11" fill="white">Mental</text>
+                            <text x="400" y="185" text-anchor="middle" font-size="11" fill="white">Health</text>
+                            
+                            <circle cx="300" cy="75" r="40" fill="#00a1df" />
+                            <text x="300" y="70" text-anchor="middle" font-size="11" fill="white">Nutritional</text>
+                            <text x="300" y="85" text-anchor="middle" font-size="11" fill="white">Health</text>
+                            
+                            <circle cx="300" cy="275" r="40" fill="#00a1df" />
+                            <text x="300" y="270" text-anchor="middle" font-size="11" fill="white">Preventive</text>
+                            <text x="300" y="285" text-anchor="middle" font-size="11" fill="white">Screening</text>
+                            
+                            <!-- Surrounding Circles - Layer 2 -->
+                            <circle cx="150" cy="105" r="25" fill="#4caf50" />
+                            <text x="150" y="108" text-anchor="middle" font-size="8" fill="white">Fitness</text>
+                            
+                            <circle cx="150" cy="245" r="25" fill="#4caf50" />
+                            <text x="150" y="248" text-anchor="middle" font-size="8" fill="white">Sleep</text>
+                            
+                            <circle cx="450" cy="105" r="25" fill="#4caf50" />
+                            <text x="450" y="108" text-anchor="middle" font-size="8" fill="white">Stress</text>
+                            
+                            <circle cx="450" cy="245" r="25" fill="#4caf50" />
+                            <text x="450" y="248" text-anchor="middle" font-size="8" fill="white">Social</text>
+                            
+                            <!-- Connecting Lines -->
+                            <line x1="240" y1="175" x2="260" y2="175" stroke="white" stroke-width="2" />
+                            <line x1="340" y1="175" x2="360" y2="175" stroke="white" stroke-width="2" />
+                            <line x1="300" y1="115" x2="300" y2="135" stroke="white" stroke-width="2" />
+                            <line x1="300" y1="235" x2="300" y2="215" stroke="white" stroke-width="2" />
+                            
+                            <line x1="180" y1="145" x2="190" y2="160" stroke="white" stroke-width="1" />
+                            <line x1="180" y1="205" x2="190" y2="190" stroke="white" stroke-width="1" />
+                            <line x1="420" y1="145" x2="410" y2="160" stroke="white" stroke-width="1" />
+                            <line x1="420" y1="205" x2="410" y2="190" stroke="white" stroke-width="1" />
+                            
+                            <!-- Program Types -->
+                            <rect x="60" y="40" width="100" height="30" rx="5" ry="5" fill="#ff9800" />
+                            <text x="110" y="60" text-anchor="middle" font-size="12" fill="white">Executive Health</text>
+                            
+                            <rect x="60" y="280" width="100" height="30" rx="5" ry="5" fill="#ff9800" />
+                            <text x="110" y="300" text-anchor="middle" font-size="12" fill="white">Chronic Disease</text>
+                            
+                            <rect x="440" y="40" width="100" height="30" rx="5" ry="5" fill="#ff9800" />
+                            <text x="490" y="60" text-anchor="middle" font-size="12" fill="white">Women's Wellness</text>
+                            
+                            <rect x="440" y="280" width="100" height="30" rx="5" ry="5" fill="#ff9800" />
+                            <text x="490" y="300" text-anchor="middle" font-size="12" fill="white">Corporate Health</text>
+                            
+                            <!-- Connecting Lines to Programs -->
+                            <line x1="110" y1="70" x2="150" y2="95" stroke="#ff9800" stroke-width="1" stroke-dasharray="5,2" />
+                            <line x1="110" y1="280" x2="150" y2="255" stroke="#ff9800" stroke-width="1" stroke-dasharray="5,2" />
+                            <line x1="490" y1="70" x2="450" y2="95" stroke="#ff9800" stroke-width="1" stroke-dasharray="5,2" />
+                            <line x1="490" y1="280" x2="450" y2="255" stroke="#ff9800" stroke-width="1" stroke-dasharray="5,2" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Digital Wellness Solutions</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Wellness App:</strong> Mobile application for health tracking, goal setting, and wellness education</li>
+                            <li><strong>Remote Monitoring:</strong> Integration with wearables and home devices for continuous health monitoring</li>
+                            <li><strong>Virtual Coaching:</strong> Digital coaching for nutrition, fitness, and lifestyle management</li>
+                            <li><strong>Health Risk Assessments:</strong> Online tools for personalized risk evaluation and prevention planning</li>
+                            <li><strong>Wellness Communities:</strong> Digital platforms for peer support and shared wellness journeys</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h3 class="text-lg mb-3">Key Performance Indicators</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li>Wellness program enrollment (target: 100,000 members by 2028)</li>
+                            <li>Revenue from wellness and preventive services (target: 20% of total revenue by 2028)</li>
+                            <li>Clinical outcomes for program participants (target: 30% reduction in chronic disease progression)</li>
+                            <li>Corporate wellness client base (target: 500 corporate clients by 2028)</li>
+                            <li>Digital wellness platform adoption (target: 75% of wellness members actively engaged)</li>
+                            <li>Member retention rate (target: 85% annual retention)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 p-5 rounded-lg mt-6">
+                    <h3 class="text-lg mb-3">Vision 2030 Alignment</h3>
+                    <p class="mb-4">
+                        The Wellness and Preventive Care Programs initiative strongly supports Vision 2030 healthcare objectives:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-1 text-sm">
+                        <li>Directly addresses the key healthcare goal of shifting from curative to preventive care models</li>
+                        <li>Targets the high burden of lifestyle-related diseases, including diabetes, obesity, and cardiovascular disease</li>
+                        <li>Supports the goal of increasing life expectancy to 80 years by 2030 through preventive interventions</li>
+                        <li>Aligns with the National Transformation Program's focus on improving public health and quality of life</li>
+                        <li>Complements the Weqaya national preventive health initiative focusing on non-communicable diseases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-number">Page 6</div>
+    </div>
+    
+    <!-- Implementation Roadmap -->
+    <div class="page" id="implementation">
+        <div class="section">
+            <h1 class="text-3xl mb-6 section-header">6. Implementation Roadmap</h1>
+            
+            <p class="mb-6">
+                Successful execution of the four strategic pillars requires a structured, phased implementation approach. This roadmap outlines the key initiatives, milestones, and priorities across three phases over the next five years.
+            </p>
+            
+            <div id="phase-one" class="mb-10">
+                <h2 class="text-2xl mb-4">6.1 Phase One: Foundation (2025-2026)</h2>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-timeline">
+                        <strong>Q3-Q4 2025</strong>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="text-lg font-medium mb-2">Digital Infrastructure Enhancement</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Complete assessment of current digital capabilities and identify gaps</li>
+                            <li>Develop comprehensive digital transformation strategy and roadmap</li>
+                            <li>Establish cloud infrastructure and API architecture for digital health platform</li>
+                            <li>Enhance cybersecurity framework for digital health initiatives</li>
+                            <li>Launch updated patient app and portal with enhanced functionality</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-timeline">
+                        <strong>Q1-Q2 2026</strong>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="text-lg font-medium mb-2">AI Foundation and Initial Use Cases</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Establish AI Center of Excellence with governance framework</li>
+                            <li>Develop data strategy and quality improvement initiatives</li>
+                            <li>Implement initial AI use cases in radiology and pathology</li>
+                            <li>Launch pilot AI-driven operational optimization initiatives</li>
+                            <li>Begin AI workforce development program for clinical and technical staff</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-timeline">
+                        <strong>Q3-Q4 2026</strong>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="text-lg font-medium mb-2">Medical Tourism Framework Development</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Establish dedicated International Patient Department</li>
+                            <li>Develop comprehensive service packages for key specialties</li>
+                            <li>Create multilingual marketing materials and digital presence</li>
+                            <li>Establish initial partnerships with international insurers and facilitators</li>
+                            <li>Launch representative office in UAE as pilot for international presence</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-timeline">
+                        <strong>Q1-Q4 2026</strong>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="text-lg font-medium mb-2">Wellness Program Foundation</h3>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Develop comprehensive wellness assessment protocols</li>
+                            <li>Launch Executive Health Program as initial wellness offering</li>
+                            <li>Establish first dedicated Wellness Center in Riyadh</li>
+                            <li>Develop initial corporate wellness offerings for key accounts</li>
+                            <li>Create digital wellness platform foundation and initial app release</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-5 rounded-lg mt-6">
+                    <h3 class="text-lg mb-3">Phase One Key Deliverables</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Enhanced digital infrastructure capable of supporting all strategic pillars</li>
+                            <li>Patient app and portal with 50% active user adoption</li>
+                            <li>AI governance framework and initial use cases with measurable ROI</li>
+                            <li>International Patient Department operational with service packages</li>
+                        </ul>
+                    </div>
+                </div>
+            </body>
+</html>
